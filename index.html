@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pago Diferido | MasterMoto Américas</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+    }
+
+    body{
+      font-family:'Inter',sans-serif;
+      background:#f4f6f9;
+      padding:30px 15px;
+      color:#1f2937;
+    }
+
+    .card{
+      max-width:700px;
+      margin:auto;
+      background:white;
+      border-radius:22px;
+      overflow:hidden;
+      box-shadow:0 10px 35px rgba(0,0,0,0.08);
+    }
+
+    .header{
+      background:linear-gradient(135deg,#c00000,#7f0000);
+      color:white;
+      padding:35px;
+      text-align:center;
+    }
+
+    .header h1{
+      font-size:30px;
+      margin-bottom:10px;
+    }
+
+    .header p{
+      opacity:0.95;
+      line-height:1.5;
+    }
+
+    .secure-box{
+      background:#fff5f5;
+      border:1px solid #ffd4d4;
+      margin:25px;
+      padding:16px;
+      border-radius:14px;
+      color:#7a1b1b;
+      font-size:14px;
+      line-height:1.5;
+    }
+
+    form{
+      padding:10px 25px 35px;
+    }
+
+    .section-title{
+      font-size:18px;
+      font-weight:700;
+      margin:20px 0 15px;
+      color:#b00000;
+    }
+
+    .grid{
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:18px;
+    }
+
+    .full{
+      grid-column:1 / -1;
+    }
+
+    .input-group{
+      display:flex;
+      flex-direction:column;
+    }
+
+    label{
+      font-size:14px;
+      margin-bottom:8px;
+      font-weight:600;
+    }
+
+    input, select{
+      padding:14px;
+      border-radius:12px;
+      border:1px solid #d1d5db;
+      font-size:15px;
+      transition:0.2s;
+    }
+
+    input:focus, select:focus{
+      outline:none;
+      border-color:#c00000;
+      box-shadow:0 0 0 4px rgba(192,0,0,0.1);
+    }
+
+    .btn{
+      width:100%;
+      background:linear-gradient(135deg,#c00000,#8f0000);
+      color:white;
+      border:none;
+      padding:16px;
+      border-radius:14px;
+      margin-top:30px;
+      font-size:16px;
+      font-weight:700;
+      cursor:pointer;
+      transition:0.2s;
+    }
+
+    .btn:hover{
+      transform:translateY(-1px);
+      opacity:0.96;
+    }
+
+    .footer{
+      padding:0 25px 30px;
+      font-size:13px;
+      color:#6b7280;
+      line-height:1.6;
+    }
+
+    .logos{
+      display:flex;
+      justify-content:center;
+      gap:12px;
+      margin-top:15px;
+      flex-wrap:wrap;
+    }
+
+    .logo-pill{
+      background:#f3f4f6;
+      padding:8px 14px;
+      border-radius:999px;
+      font-size:13px;
+      font-weight:600;
+    }
+
+    @media(max-width:700px){
+      .grid{
+        grid-template-columns:1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="card">
+
+    <div class="header">
+      <h1>Pago Diferido Seguro</h1>
+      <p>
+        MASTERMOTO AMÉRICAS / UNNOPARTS S.A.<br>
+        Plataforma segura de pagos en línea mediante Datalink.
+      </p>
+
+      <div class="logos">
+        <div class="logo-pill">Visa</div>
+        <div class="logo-pill">Mastercard</div>
+        <div class="logo-pill">Diners</div>
+        <div class="logo-pill">Discover</div>
+      </div>
+    </div>
+
+    <div class="secure-box">
+      🔒 Por seguridad, NO solicite ni almacene números completos de tarjeta, CVV o claves en esta página.
+      El pago debe procesarse directamente en la plataforma oficial de Datalink.
+    </div>
+
+    <form>
+
+      <div class="section-title">Datos Personales</div>
+
+      <div class="grid">
+
+        <div class="input-group">
+          <label>Cédula de identidad</label>
+          <input type="text" placeholder="Ingrese su cédula">
+        </div>
+
+        <div class="input-group">
+          <label>Número de teléfono</label>
+          <input type="tel" placeholder="0999999999">
+        </div>
+
+        <div class="input-group full">
+          <label>Correo electrónico</label>
+          <input type="email" placeholder="correo@ejemplo.com">
+        </div>
+
+      </div>
+
+      <div class="section-title">Datos de Diferido</div>
+
+      <div class="grid">
+
+        <div class="input-group">
+          <label>Banco de la tarjeta</label>
+          <input type="text" placeholder="Ej: Banco Pichincha">
+        </div>
+
+        <div class="input-group">
+          <label>Nombre del titular</label>
+          <input type="text" placeholder="Nombre impreso en tarjeta">
+        </div>
+
+        <div class="input-group full">
+          <label>Tiempo diferido solicitado</label>
+          <select>
+            <option>3 meses</option>
+            <option>6 meses</option>
+            <option>9 meses</option>
+            <option>12 meses</option>
+            <option>18 meses</option>
+            <option>24 meses</option>
+          </select>
+        </div>
+
+      </div>
+
+      <button class="btn" type="button">
+        Continuar a Pago Seguro
+      </button>
+
+    </form>
+
+    <div class="footer">
+      ⚠️ La información ingresada será utilizada únicamente para validar el proceso de pago diferido.
+      El procesamiento de tarjeta se realiza directamente mediante la pasarela segura de Datalink.
+    </div>
+
+  </div>
+
+</body>
+</html>
+```
+
+## Cómo subirlo y obtener tu link
+
+1. Entra a tu repositorio de GitHub.
+2. Abre tu proyecto.
+3. Reemplaza el archivo `index.html` con este código.
+4. Guarda con `Commit changes`.
+5. Activa GitHub Pages.
+6. Tu link quedará así:
+
+```text
+https://TUUSUARIO.github.io/NOMBRE-DEL-REPO/
+```
+
+## Recomendación importante
+
+Para aceptar pagos reales con tarjeta:
+
+* No guardes números de tarjeta en HTML.
+* Usa la pasarela oficial de Datalink.
+* El botón “Continuar a Pago Seguro” debe redirigir al checkout oficial.
+* Así evitas bloqueos, fraudes y problemas de seguridad.
